@@ -27,7 +27,7 @@ class RootPage extends StatelessWidget {
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Flutter Music Player"),
+        title: new Text("Music Player for Task"),
         actions: <Widget>[
           new Container(
             padding: const EdgeInsets.all(20.0),

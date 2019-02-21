@@ -142,21 +142,24 @@ class _NowPlayingState extends State<NowPlaying> {
   @override
   Widget build(BuildContext context) {
     Widget _buildPlayer() => new Container(
-        padding: new EdgeInsets.all(20.0),
+        padding: new EdgeInsets.all(0.0),
         child: new Column(mainAxisSize: MainAxisSize.min, children: [
           new Column(
             children: <Widget>[
               new Text(
                 song.title,
                 style: Theme.of(context).textTheme.headline,
+
               ),
               new Text(
                 song.artist,
                 style: Theme.of(context).textTheme.caption,
               ),
+
               new Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-              )
+                padding: const EdgeInsets.only(bottom: 0.0),
+              ),
+
             ],
           ),
           new Row(mainAxisSize: MainAxisSize.min, children: [
@@ -182,7 +185,7 @@ class _NowPlayingState extends State<NowPlaying> {
                 style: new TextStyle(fontSize: 24.0))
           ]),
           new Padding(
-            padding: const EdgeInsets.only(bottom: 20.0),
+            padding: const EdgeInsets.only(bottom: 18.0),
           ),
           new Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
